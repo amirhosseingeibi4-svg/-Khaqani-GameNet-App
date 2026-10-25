@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090512">
+<meta name="description" content="گیم‌نت خاقانی؛ بازی‌های روز، رزرو بلیت و عضویت">
+<link rel="manifest" href="manifest.json">
+<title>GameNet | گیم‌نت خاقانی</title>
+<style>
+:root{--bg:#080510;--panel:#110b20;--panel2:#17102a;--purple:#9d35ff;--pink:#e04cff;--line:#39205a;--text:#f8f2ff;--muted:#b7a9ca;--green:#54edb1}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#251044 0,#080510 55%);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer;border:0;color:white;background:linear-gradient(120deg,#7a20ef,#c32cff);padding:12px 15px;border-radius:12px;font-weight:bold;box-shadow:0 5px 18px #8e20ff25}button.secondary{background:#1a1129;border:1px solid var(--line);box-shadow:none}button.small{padding:7px 10px;font-size:12px}.wrap{max-width:1050px;margin:auto;padding:16px 14px 92px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0 18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px;letter-spacing:.5px}.logo{display:grid;place-items:center;width:46px;height:46px;border:1px solid #b64dff;border-radius:15px;background:#1a0b2c;font-size:26px;box-shadow:0 0 24px #8d22ff4a}.tag{color:#d7a6ff;font-size:12px;margin-top:4px}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 11px;color:#d7c5ec;font-size:12px}.hero{border:1px solid #6e27a3;border-radius:22px;padding:23px 20px;background:linear-gradient(125deg,#21103c,#0e0919 65%,#30104a);position:relative;overflow:hidden;box-shadow:0 12px 45px #0008}.hero:after{content:"🎮";position:absolute;left:20px;top:20px;font-size:70px;opacity:.14;transform:rotate(-14deg)}.hero h1{font-size:clamp(24px,5vw,38px);margin:0 0 10px}.hero p{color:#d0c1e3;line-height:1.9;max-width:600px;font-size:14px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0}.stat,.card{background:linear-gradient(145deg,#171027,#0d0916);border:1px solid var(--line);border-radius:17px;padding:14px}.stat strong{display:block;font-size:20px;color:#d990ff;margin-bottom:5px}.stat span{font-size:12px;color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:24px 2px 12px}.section-head h2{font-size:18px;margin:0}.muted{color:var(--muted);font-size:12px}.chips{display:flex;gap:7px;overflow:auto;padding-bottom:10px}.chip{white-space:nowrap;border:1px solid var(--line);border-radius:99px;padding:8px 12px;background:#120b20;color:#d7c7e9;font-size:12px}.chip.active{background:#7121bc;border-color:#c56aff;color:#fff}.games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.game{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#100a1a}.game-art{height:102px;display:grid;place-items:center;font-size:43px;background:radial-gradient(circle at 50% 0,#61249a,#19102b 60%,#0d0915)}.game-body{padding:12px}.game-title{font-weight:bold;margin-bottom:6px}.game-meta{display:flex;justify-content:space-between;gap:6px;color:var(--muted);font-size:11px;margin-bottom:12px}.game-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{color:#e2a2ff;font-weight:bold;font-size:13px}.game-foot button{padding:8px 10px;font-size:12px}.page{display:none}.page.active{display:block}.field{display:grid;gap:7px;margin:12px 0}.field label{font-size:13px;color:#d9c7eb}.field input,.field select{width:100%;border:1px solid var(--line);background:#090612;color:white;border-radius:11px;padding:12px;outline:none}.field input:focus,.field select:focus{border-color:#b45bff}.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}.ticket,.listrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px;border:1px solid var(--line);border-radius:13px;background:#100a1a;margin:9px 0}.ticket h3{font-size:14px;margin:0 0 5px}.ticket p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}.notice{border:1px solid #71469a;background:#1a0e29;border-radius:13px;padding:12px;color:#ddc9f4;font-size:12px;line-height:1.9;margin:12px 0}.success{color:var(--green)}.bottom{position:fixed;bottom:0;left:0;right:0;background:#090511ee;backdrop-filter:blur(14px);border-top:1px solid #2c1a41;display:flex;justify-content:center;z-index:5;padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom))}.nav{display:flex;gap:5px;width:min(700px,100%);justify-content:space-around}.nav button{flex:1;background:transparent;box-shadow:none;color:#b6a4cb;padding:7px 2px;font-size:10px;border-radius:10px}.nav button span{display:block;font-size:19px;margin-bottom:4px}.nav button.active{background:#25113a;color:#e4b3ff;border:1px solid #5a287f}.admin-only{display:none}.is-admin .admin-only{display:block}.empty{padding:25px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.footer{text-align:center;color:#77688a;font-size:11px;margin:25px 0 5px}@media(min-width:700px){.games{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:30px}.game-art{height:125px}}@media(max-width:360px){.games{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr 1fr}.stat{padding:10px}.stat strong{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="logo">🎮</div><div>GAME<span style="color:#d95aff">NET</span><div class="tag">گیم‌نت خاقانی · بازی، رقابت، هیجان</div></div></div>
+ <button id="installBtn" class="secondary small" hidden>نصب برنامه ⬇</button>
+</header>
+<main>
+<section id="home" class="page active">
+ <div class="hero"><div class="pill">● فهرست امروز به‌روز است</div><h1>بازی کن؛ رکورد بزن؛ <span style="color:#dc8aff">قهرمان شو!</span></h1><p>بازی‌های امروز را ببین، بلیتت را انتخاب کن و با چند قدم ساده برای رقابت آماده شو. همه‌چیز با حال‌وهوای بنفش و مشکی گیم‌نت.</p><div class="hero-actions"><button onclick="showPage('games')">مشاهده بازی‌های امروز</button><button class="secondary" onclick="showPage('tickets')">خرید بلیت</button></div></div>
+ <div class="stats"><div class="stat"><strong id="gameCount">۶</strong><span>بازی فعال امروز</span></div><div class="stat"><strong id="ticketCount">۰</strong><span>بلیت‌های من</span></div><div class="stat"><strong>۲۴/۷</strong><span>دسترسی به فهرست</span></div></div>
+ <div class="section-head"><h2>🔥 انتخاب‌های امروز</h2><button class="secondary small" onclick="showPage('games')">همه بازی‌ها ←</button></div>
+ <div id="featuredGames" class="games"></div>
+ <div class="notice">💜 قیمت‌ها و فهرست بازی‌ها نمونه‌اند و مدیر می‌تواند آن‌ها را از بخش مدیریت تغییر دهد. پرداخت در این نسخه آزمایشی است و پول واقعی جابه‌جا نمی‌شود.</div>
+</section>
+<section id="games" class="page">
+ <div class="section-head"><h2>🎮 بازی‌های امروز</h2><span class="muted" id="todayLabel"></span></div>
+ <div class="chips" id="filters"><button class="chip active" data-filter="همه">همه</button><button class="chip" data-filter="کنسول">کنسول</button><button class="chip" data-filter="کامپیوتر">کامپیوتر</button><button class="chip" data-filter="رقابتی">رقابتی</button></div>
+ <div id="allGames" class="games"></div>
+</section>
+<section id="tickets" class="page">
+ <div class="section-head"><h2>🎟️ بلیت‌فروشی</h2><span class="muted">انتخاب و ثبت بلیت</span></div>
+ <div class="card"><div class="field"><label>نوع بلیت</label><select id="ticketType"><option value="جلسه بازی">جلسه بازی</option><option value="مسابقه روز">مسابقه روز</option><option value="بلیت گروهی">بلیت گروهی</option></select></div><div class="row2"><div class="field"><label>تعداد</label><select id="ticketQty"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div><div class="field"><label>مدت</label><select id="ticketDuration"><option value="۱ ساعت">۱ ساعت</option><option value="۲ ساعت">۲ ساعت</option><option value="۳ ساعت">۳ ساعت</option></select></div></div><div class="ticket"><div><h3>قیمت بلیت</h3><p>قیمت پایه قابل تنظیم از بخش مدیریت</p></div><strong class="price" id="ticketPrice">۸۰٬۰۰۰ تومان</strong></div><button style="width:100%" onclick="buyTicket()">ثبت بلیت و ادامه پرداخت</button></div>
+ <div class="section-head"><h2>بلیت‌های ثبت‌شده</h2></div><div id="myTickets"></div>
+</section>
+
+<section id="reservation" class="page">
+ <div class="section-head"><h2>🕹️ رزرو کامپیوتر و کنسول</h2><span class="muted">رزرو ساعتی</span></div>
+ <div class="card">
+  <p class="muted">دستگاه و زمان دلخواهت را انتخاب کن تا درخواست رزرو ثبت شود.</p>
+  <div class="field"><label>نوع دستگاه</label><select id="reserveDevice"><option value="PS5">PlayStation 5</option><option value="PS4">PlayStation 4</option><option value="PC">کامپیوتر گیمینگ</option><option value="Xbox">Xbox</option></select></div>
+  <div class="row2">
+   <div class="field"><label>تاریخ رزرو</label><input id="reserveDate" type="date"></div>
+   <div class="field"><label>ساعت شروع</label><select id="reserveTime"><option value="10:00">۱۰:۰۰</option><option value="11:00">۱۱:۰۰</option><option value="12:00">۱۲:۰۰</option><option value="13:00">۱۳:۰۰</option><option value="14:00">۱۴:۰۰</option><option value="15:00">۱۵:۰۰</option><option value="16:00">۱۶:۰۰</option><option value="17:00">۱۷:۰۰</option><option value="18:00">۱۸:۰۰</option><option value="19:00">۱۹:۰۰</option><option value="20:00">۲۰:۰۰</option><option value="21:00">۲۱:۰۰</option><option value="22:00">۲۲:۰۰</option></select></div>
+  </div>
+  <div class="row2">
+   <div class="field"><label>مدت رزرو</label><select id="reserveDuration"><option value="1">۱ ساعت</option><option value="2">۲ ساعت</option><option value="3">۳ ساعت</option></select></div>
+   <div class="field"><label>تعداد نفرات</label><select id="reservePeople"><option value="1">۱ نفر</option><option value="2">۲ نفر</option><option value="3">۳ نفر</option><option value="4">۴ نفر</option></select></div>
+  </div>
+  <div class="ticket"><div><h3>مبلغ تخمینی</h3><p>بر اساس قیمت پایه بلیت؛ قابل تغییر توسط مدیریت</p></div><strong class="price" id="reservePrice">۸۰٬۰۰۰ تومان</strong></div>
+  <button style="width:100%" onclick="submitReservation()">ثبت درخواست رزرو</button>
+  <div class="notice">این نسخه ظرفیت واقعی دستگاه‌ها را کنترل نمی‌کند و رزروها تا زمان تأیید مدیر، درخواست محسوب می‌شوند.</div>
+ </div>
+ <div class="section-head"><h2>رزروهای من</h2></div><div id="myReservations"></div>
+</section>
+
+<section id="payment" class="page">
+ <div class="section-head"><h2>💳 پرداخت</h2><span class="muted">پیش‌نمایش پرداخت</span></div><div class="card"><div class="ticket"><div><h3 id="payTitle">بلیت گیم‌نت</h3><p id="payDescription">جزئیات سفارش</p></div><strong id="payAmount" class="price">۸۰٬۰۰۰ تومان</strong></div><div class="field"><label>روش پرداخت</label><select id="payMethod"><option>درگاه بانکی (آزمایشی)</option><option>درگاه بانکی واقعی (زرین‌پال)</option><option>پرداخت در محل</option><option>کیف پول (آزمایشی)</option></select></div><div class="notice">این نسخه درگاه بانکی واقعی ندارد. برای دریافت پول واقعی باید درگاه معتبر، سرور امن و تأیید تراکنش به پروژه متصل شود.</div><button style="width:100%" onclick="confirmPayment()">تأیید آزمایشی سفارش</button></div><div id="paymentResult"></div></section>
+<section id="membership" class="page">
+ <div class="section-head"><h2>👤 عضویت کاربران</h2></div><div class="card"><p class="muted">برای ساخت حساب محلی، اطلاعات زیر را وارد کن.</p><div class="field"><label>نام نمایشی</label><input id="memberName" placeholder="مثلاً امیر"></div><div class="field"><label>شماره موبایل</label><input id="memberPhone" inputmode="tel" placeholder="09xxxxxxxxx"></div><div class="field"><label>رمز دلخواه</label><input id="memberPassword" type="password" placeholder="حداقل ۴ نویسه"></div><button style="width:100%" onclick="registerMember()">ثبت عضویت</button><div id="memberResult"></div></div><div class="notice">حساب‌ها در همین دستگاه ذخیره می‌شوند؛ ورود امن چنددستگاهی و بازیابی رمز در نسخه متصل به سرور پیاده‌سازی می‌شود.</div></section>
+<section id="profile" class="page">
+ <div class="section-head"><h2>🏆 پروفایل کاربر</h2></div><div class="card"><div class="logo" style="margin:auto;width:65px;height:65px">👾</div><h2 id="profileName" style="text-align:center">مهمان گیم‌نت</h2><p class="muted" style="text-align:center" id="profilePhone">برای عضویت وارد بخش عضویت شو</p><div class="stats"><div class="stat"><strong id="profileTickets">۰</strong><span>بلیت ثبت‌شده</span></div><div class="stat"><strong>سطح ۱</strong><span>شروع‌کننده</span></div><div class="stat"><strong>💜</strong><span>عضو گیم‌نت</span></div></div><button class="secondary" style="width:100%" onclick="showPage('membership')">ویرایش / عضویت</button></div></section>
+<section id="admin" class="page">
+ <div class="section-head"><h2>🛠️ پنل مدیریت</h2><span class="pill">مدیریت محلی</span></div>
+ <div class="notice">نسخه نمایشی: پنل مدیریت روی همین دستگاه کار می‌کند. برای مدیریت واقعی توسط چند مدیر، احراز هویت و سرور لازم است.</div>
+ <div class="card"><h3>افزودن بازی روز</h3><div class="field"><label>نام بازی</label><input id="newGameName" placeholder="مثلاً EA Sports FC"></div><div class="row2"><div class="field"><label>پلتفرم</label><select id="newGamePlatform"><option>PS5</option><option>PS4</option><option>PC</option><option>Xbox</option></select></div><div class="field"><label>دسته‌بندی</label><select id="newGameCategory"><option>کنسول</option><option>کامپیوتر</option><option>رقابتی</option></select></div></div><div class="field"><label>قیمت هر ساعت (تومان)</label><input id="newGamePrice" type="number" value="80000" min="0"></div><button style="width:100%" onclick="addGame()">افزودن به فهرست امروز</button></div>
+ <div class="card" style="margin-top:12px"><h3>قیمت پایه بلیت</h3><div class="field"><label>قیمت (تومان)</label><input id="basePrice" type="number" min="0" value="80000"></div><button onclick="saveBasePrice()">ذخیره قیمت</button></div>
+ <div class="section-head"><h2>مدیریت فهرست بازی‌ها</h2><button class="secondary small" onclick="resetGames()">بازگردانی نمونه‌ها</button></div><div id="adminGames"></div>
+ <div class="section-head"><h2>سفارش‌ها</h2></div><div id="adminOrders"></div>
+ <div class="section-head"><h2>درخواست‌های رزرو</h2></div><div id="adminReservations"></div>
+ <div class="section-head"><h2>مدیریت دسترسی</h2></div><div class="card"><p class="muted">ورود نمایشی مدیر برای آزمایش این نسخه: نام کاربری <b>admin</b> و رمز <b>1234</b>.</p><div class="row2"><div class="field"><label>نام کاربری مدیر</label><input id="adminUser" placeholder="admin"></div><div class="field"><label>رمز مدیر</label><input id="adminPass" type="password" placeholder="••••"></div></div><button onclick="adminLogin()">ورود به حالت مدیریت</button> <button class="secondary" onclick="adminLogout()">خروج مدیر</button><div id="adminMsg" class="muted"></div></div>
+</section>
+</main>
+<div class="footer">GAME NET · گیم‌نت خاقانی · نسخه آزمایشی ۱.۰</div>
+</div>
+<nav class="bottom"><div class="nav">
+<button class="active" data-page="home"><span>⌂</span>خانه</button><button data-page="games"><span>🎮</span>بازی‌ها</button><button data-page="tickets"><span>🎟️</span>بلیت‌ها</button><button data-page="reservation"><span>🕹️</span>رزرو</button><button data-page="membership"><span>♙</span>عضویت</button><button data-page="profile"><span>👤</span>پروفایل</button><button data-page="admin" class="admin-only"><span>⚙</span>مدیریت</button>
+</div></nav>
+<script>
+const fa=n=>Number(n||0).toLocaleString('fa-IR');
+const today=new Date().toLocaleDateString('fa-IR',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+document.getElementById('todayLabel').textContent=today;
+const defaults=[
+{id:1,name:'EA Sports FC 26',platform:'PS5',category:'رقابتی',price:80000,icon:'⚽'},
+{id:2,name:'Call of Duty',platform:'PS5',category:'رقابتی',price:90000,icon:'🎯'},
+{id:3,name:'GTA V',platform:'PS4',category:'کنسول',price:70000,icon:'🚘'},
+{id:4,name:'Mortal Kombat',platform:'PS5',category:'رقابتی',price:75000,icon:'🥊'},
+{id:5,name:'Minecraft',platform:'PC',category:'کامپیوتر',price:60000,icon:'🧱'},
+{id:6,name:'Forza Horizon',platform:'Xbox',category:'کنسول',price:85000,icon:'🏎️'}
+];
+let games=JSON.parse(localStorage.getItem('gn_games')||'null')||defaults;
+let orders=JSON.parse(localStorage.getItem('gn_orders')||'[]');
+let member=JSON.parse(localStorage.getItem('gn_member')||'null');
+let basePrice=Number(localStorage.getItem('gn_basePrice')||80000);
+let pending=null, isAdmin=false, filter='همه';
+const save=()=>{localStorage.setItem('gn_games',JSON.stringify(games));localStorage.setItem('gn_orders',JSON.stringify(orders));localStorage.setItem('gn_basePrice',basePrice)};
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===id));if(id==='admin'&&!isAdmin){document.getElementById('adminMsg').textContent='برای فعال‌کردن پنل، با اطلاعات نمایشی مدیر وارد شو.'}render();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button[data-page]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+function gameCard(g){return `<article class="game"><div class="game-art">${g.icon||'🎮'}</div><div class="game-body"><div class="game-title">${esc(g.name)}</div><div class="game-meta"><span>${esc(g.platform)}</span><span>${esc(g.category)}</span></div><div class="game-foot"><span class="price">${fa(g.price)} تومان/ساعت</span><button onclick="chooseGame(${g.id})">انتخاب</button></div></div></article>`}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderGames(){document.getElementById('featuredGames').innerHTML=games.slice(0,4).map(gameCard).join('')||'<div class="empty">بازی‌ای ثبت نشده است.</div>';document.getElementById('allGames').innerHTML=games.filter(g=>filter==='همه'||g.category===filter||(filter==='کنسول'&&['PS5','PS4','Xbox'].includes(g.platform))||(filter==='کامپیوتر'&&g.platform==='PC')).map(gameCard).join('')||'<div class="empty">در این دسته بازی‌ای نیست.</div>';document.getElementById('gameCount').textContent=fa(games.length);document.getElementById('adminGames').innerHTML=games.map(g=>`<div class="listrow"><div><b>${esc(g.name)}</b><div class="muted">${esc(g.platform)} · ${fa(g.price)} تومان/ساعت</div></div><button class="secondary small" onclick="deleteGame(${g.id})">حذف</button></div>`).join('')||'<div class="empty">فهرست خالی است.</div>'}
+document.getElementById('filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('.chip').forEach(x=>x.classList.toggle('active',x===b));renderGames()});
+function chooseGame(id){const g=games.find(x=>x.id===id);if(!g)return;document.getElementById('ticketType').value='جلسه بازی';document.getElementById('ticketPrice').textContent=fa(g.price)+' تومان';pending={title:g.name,price:g.price,description:g.platform+' · هر ساعت'};showPage('tickets');}
+function buyTicket(){const qty=Number(document.getElementById('ticketQty').value),duration=document.getElementById('ticketDuration').value,type=document.getElementById('ticketType').value;const price=(pending?.price||basePrice)*qty*(duration==='۲ ساعت'?2:duration==='۳ ساعت'?3:1);orders.unshift({id:Date.now(),title:pending?.title||type,qty,duration,type,price,status:'در انتظار پرداخت',date:new Date().toLocaleString('fa-IR')});save();pending={title:orders[0].title,price,description:`${qty} عدد · ${duration} · ${type}`,orderId:orders[0].id};document.getElementById('payTitle').textContent=pending.title;document.getElementById('payDescription').textContent=pending.description;document.getElementById('payAmount').textContent=fa(price)+' تومان';showPage('payment')}
+async function confirmPayment(){if(document.getElementById('payMethod').value==='درگاه بانکی واقعی (زرین‌پال)'){try{const response=await fetch('/api/payments/create',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({title:pending?.title||'خرید بلیت گیم‌نت',amount:Number(pending?.price||basePrice)})});const data=await response.json();if(!response.ok)throw new Error(data.error||'خطا در ساخت پرداخت');window.location.href=data.paymentUrl;return}catch(e){document.getElementById('paymentResult').innerHTML='<div class="notice">'+esc(e.message)+'<br>پرداخت واقعی فقط پس از تنظیم سرور و درگاه فعال می‌شود.</div>';return}}if(!orders.length){document.getElementById('paymentResult').innerHTML='<div class="notice">ابتدا یک بلیت ثبت کن.</div>';return}const order=orders.find(o=>o.id===pending?.orderId)||orders.find(o=>o.status==='در انتظار پرداخت');if(!order){document.getElementById('paymentResult').innerHTML='<div class="notice">سفارشی برای پرداخت پیدا نشد.</div>';return}if(document.getElementById('payMethod').value==='پرداخت در محل')order.status='پرداخت در محل';else order.status='تأیید آزمایشی';save();document.getElementById('paymentResult').innerHTML=`<div class="notice"><span class="success">✓ سفارش ثبت شد.</span><br>شماره سفارش: ${fa(order.id).slice(-6)}<br>وضعیت: ${esc(order.status)}<br>این تأیید آزمایشی است و تراکنش واقعی انجام نشده.</div>`;render()}
+function registerMember(){const name=document.getElementById('memberName').value.trim(),phone=document.getElementById('memberPhone').value.trim(),pass=document.getElementById('memberPassword').value;if(!name||!phone||pass.length<4){document.getElementById('memberResult').innerHTML='<div class="notice">نام، شماره موبایل و رمز حداقل ۴ نویسه‌ای را کامل کن.</div>';return}member={name,phone};localStorage.setItem('gn_member',JSON.stringify(member));document.getElementById('memberResult').innerHTML='<div class="notice success">عضویت محلی با موفقیت ثبت شد.</div>';render()}
+function addGame(){if(!isAdmin){alert('ابتدا با حساب نمایشی مدیر وارد شو.');return}const name=document.getElementById('newGameName').value.trim(),price=Number(document.getElementById('newGamePrice').value);if(!name||price<0){alert('نام بازی و قیمت معتبر وارد کن.');return}const platform=document.getElementById('newGamePlatform').value,category=document.getElementById('newGameCategory').value;games.unshift({id:Date.now(),name,platform,category,price,icon:platform==='PC'?'🖥️':'🎮'});document.getElementById('newGameName').value='';save();render()}
+function deleteGame(id){if(!isAdmin){alert('ابتدا وارد حالت مدیریت شو.');return}games=games.filter(g=>g.id!==id);save();render()}
+function resetGames(){if(!isAdmin){alert('ابتدا وارد حالت مدیریت شو.');return}games=[...defaults];save();render()}
+function saveBasePrice(){if(!isAdmin){alert('ابتدا وارد حالت مدیریت شو.');return}basePrice=Math.max(0,Number(document.getElementById('basePrice').value)||0);save();document.getElementById('ticketPrice').textContent=fa(basePrice)+' تومان';alert('قیمت پایه ذخیره شد.')}
+function adminLogin(){if(document.getElementById('adminUser').value==='admin'&&document.getElementById('adminPass').value==='1234'){isAdmin=true;document.body.classList.add('is-admin');document.getElementById('adminMsg').innerHTML='<span class="success">حالت مدیریت فعال شد.</span>';render()}else document.getElementById('adminMsg').textContent='اطلاعات ورود نادرست است.'}
+function adminLogout(){isAdmin=false;document.body.classList.remove('is-admin');document.getElementById('adminMsg').textContent='از حالت مدیریت خارج شدی.'}
+
+let reservations=JSON.parse(localStorage.getItem('gn_reservations')||'[]');
+function saveReservations(){localStorage.setItem('gn_reservations',JSON.stringify(reservations))}
+function updateReservationPrice(){const duration=Number(document.getElementById('reserveDuration')?.value||1);const price=basePrice*duration;const el=document.getElementById('reservePrice');if(el)el.textContent=fa(price)+' تومان'}
+async function submitReservation(){
+ const device=document.getElementById('reserveDevice').value;
+ const date=document.getElementById('reserveDate').value;
+ const time=document.getElementById('reserveTime').value;
+ const duration=Number(document.getElementById('reserveDuration').value);
+ const people=Number(document.getElementById('reservePeople').value);
+ if(!date){alert('لطفاً تاریخ رزرو را انتخاب کن.');return}
+ const selectedDate=new Date(date+'T00:00:00');const todayDate=new Date();todayDate.setHours(0,0,0,0);
+ if(selectedDate<todayDate){alert('تاریخ رزرو نمی‌تواند در گذشته باشد.');return}
+ let serverReservation=null;
+ try {
+  const resp=await fetch('/api/reservations',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({device,date,time,duration,people})});
+  const data=await resp.json();
+  if(resp.status===409){alert(data.error||'این زمان قبلاً رزرو شده است.');return}
+  if(resp.ok)serverReservation=data;
+  else if(resp.status!==404)throw new Error(data.error||'ثبت رزرو انجام نشد.');
+ } catch(err) { if(location.protocol.startsWith('http') && location.hostname!=='localhost' && location.hostname!=='127.0.0.1'){alert('ارتباط با سرور برقرار نشد؛ برای جلوگیری از رزرو تکراری، درخواست ذخیره نشد.');return} }
+ const item={id:serverReservation?.id||Date.now(),device,date,time,duration,people,price:serverReservation?.price||basePrice*duration,status:serverReservation?'در انتظار تأیید':'در انتظار تأیید (محلی)',user:member?.name||'مهمان',phone:member?.phone||'',created:new Date().toLocaleString('fa-IR')};
+ reservations.unshift(item);saveReservations();render();alert(serverReservation?'درخواست رزرو روی سرور ثبت شد.':'درخواست رزرو به‌صورت محلی ثبت شد؛ برای رزرو مرکزی سرور را اجرا کن.');
+}
+function updateReservationStatus(id){if(!isAdmin){alert('ابتدا وارد حالت مدیریت شو.');return}const r=reservations.find(x=>x.id===id);if(!r)return;r.status=prompt('وضعیت رزرو را وارد کن:',r.status)||r.status;saveReservations();render()}
+document.getElementById('reserveDuration')?.addEventListener('change',updateReservationPrice);
+
+function render(){renderGames();document.getElementById('ticketCount').textContent=fa(orders.length);document.getElementById('profileTickets').textContent=fa(orders.length);document.getElementById('profileName').textContent=member?.name||'مهمان گیم‌نت';document.getElementById('profilePhone').textContent=member?.phone||'برای عضویت وارد بخش عضویت شو';document.getElementById('myTickets').innerHTML=orders.map(o=>`<div class="ticket"><div><h3>${esc(o.title)}</h3><p>${esc(o.type||'بلیت')} · ${esc(o.duration||'')} · ${esc(o.date||'')}</p><p>وضعیت: ${esc(o.status)}</p></div><strong class="price">${fa(o.price)} تومان</strong></div>`).join('')||'<div class="empty">هنوز بلیتی ثبت نکرده‌ای.</div>';document.getElementById('adminOrders').innerHTML=orders.map(o=>`<div class="listrow"><div><b>${esc(o.title)}</b><div class="muted">${fa(o.price)} تومان · ${esc(o.status)}</div></div><button class="secondary small" onclick="setOrderStatus(${o.id})">تغییر وضعیت</button></div>`).join('')||'<div class="empty">هنوز سفارشی نیست.</div>';document.getElementById('basePrice').value=basePrice;document.getElementById('ticketPrice').textContent=fa(basePrice)+' تومان';const mine=document.getElementById('myReservations');if(mine)mine.innerHTML=reservations.filter(r=>!member||r.phone===member.phone||r.user==='مهمان').map(r=>`<div class="ticket"><div><h3>${esc(r.device)} · ${esc(r.date)} · ${esc(r.time)}</h3><p>${fa(r.duration)} ساعت · ${fa(r.people)} نفر · وضعیت: ${esc(r.status)}</p></div><strong class="price">${fa(r.price)} تومان</strong></div>`).join('')||'<div class="empty">هنوز رزروی ثبت نکرده‌ای.</div>';const ar=document.getElementById('adminReservations');if(ar)ar.innerHTML=reservations.map(r=>`<div class="listrow"><div><b>${esc(r.device)} · ${esc(r.date)} · ${esc(r.time)}</b><div class="muted">${esc(r.user)} · ${fa(r.duration)} ساعت · ${fa(r.price)} تومان · ${esc(r.status)}</div></div><button class="secondary small" onclick="updateReservationStatus(${r.id})">وضعیت</button></div>`).join('')||'<div class="empty">درخواستی ثبت نشده است.</div>';updateReservationPrice()}
+function setOrderStatus(id){if(!isAdmin){alert('ابتدا وارد حالت مدیریت شو.');return}const o=orders.find(x=>x.id===id);if(!o)return;o.status=prompt('وضعیت جدید را بنویس:',o.status)||o.status;save();render()}
+render();
+let installPrompt;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;document.getElementById('installBtn').hidden=false});document.getElementById('installBtn').addEventListener('click',async()=>{if(installPrompt){installPrompt.prompt();await installPrompt.userChoice;installPrompt=null}else alert('برای نصب، منوی مرورگر را باز کن و گزینه Add to Home screen / افزودن به صفحه اصلی را بزن.')});
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body>
+</html>
